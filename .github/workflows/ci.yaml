@@ -9,10 +9,9 @@ jobs:
       - uses: action/checkout@v2
 
       - uses: actions/setup-node@v4
-      - name: Setup Node.js 20
+      - name: Setup Node.js 18
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: 18
 
       - run: npm test
-      - run: node main.js
+      - run: npm start
